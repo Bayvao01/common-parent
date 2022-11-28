@@ -42,12 +42,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    # Initializes the CodeQL tools for scanning.
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v2
-      with:
-        languages: ${{ matrix.language }}
-
     # Attempts Maven Build attempts to build any compiled languages  (C/C++, C#, Go, or Java).
     # If this step fails, then you should check the error in build logss
     - name: Build with Maven
