@@ -9,7 +9,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  analyze:
+  build-deploy:
     name: Analyze
     runs-on: ubuntu-latest
     permissions:
